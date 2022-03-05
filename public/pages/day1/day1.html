@@ -1,0 +1,78 @@
+<div class="content">
+    <h1>Node Introduction, JavaScript basics & REST </h1>
+    <div class="section">
+        <h3 id="intro-to-Node">What is Node</h3>
+        <p>
+            Node.js is an open-source, cross-platform, back-end JavaScript runtime environment that runs on the V8
+            engine and executes JavaScript code outside a web browser. Source: Wikipedia
+        </p>
+        <p>Before in time JavaScript was only frontend code that could run in browsers.
+            With V8 runtime JavaScript became independent of browsers.
+            Now we can create scripts, and invoke them. Software and backends.
+            Node is a runtime that wraps the scripts built on V8.
+            Node in cli calls the REPL to run a file or a statement -read, evaluate, print, loop.
+            All languages have REPLs, Python also has it, with highlighting and autocompletion.
+        </p>
+        <p><i>
+                Node is a platform that fills a particular need and understanding this is absolutely essential. You
+                definitely don’t want to use Node.js for CPU-intensive operations; in fact, using it for heavy
+                computation will annul nearly all of its advantages. Where Node really shines is in building fast,
+                scalable network applications, as it’s capable of handling a huge number of simultaneous connections
+                with high throughput, which equates to high scalability. <br>Source: 
+                <a href="https://www.toptal.com/nodejs/why-the-hell-would-i-use-node-js">Topal.com</a> 
+            </i>
+        </p>
+
+    </div>
+    <div class="section">
+        <h3 id="js-datatypes">JavaScript datatypes</h3>
+        <p>
+            JavaScript is a loosely typed -it doesn't convert the type until runtime- and a dynamic language 
+            -any variable can be assigned values of all types. The rimitive values are innmutable, String, 
+            Boolean, BigInt, number, null, undefined and objects which are collections of properties are mutable like arrays.
+        </p>
+        <p> <b>Mental Note:</b> Always use hard equality check- ‘2 === 2’, it shows I understand the datatypes I'm using
+            AND don't concatenate different datatypes.
+        </p>
+
+    </div>
+    <div class="section">
+        <h3 id="js-variables">JavaScript variables</h3>
+        <p>Javascript <b>variable identifiers: var, let, const or nothing.</b>
+            We should always declare JavaScript variables with var,let, or const. The var keyword is used in all
+            JavaScript code from 1995 to 2015. The let and const keywords were added to JavaScript in 2015. Only if you
+            want your code to run in an older browser, you must use var, as it has a global scope and so it’s not
+            recommended.
+            When to Use JavaScript const??? As a general rule you should <b>always declare variables with const unless
+                you think the value of the variable will change, then we should use let.</b>
+        </p>
+
+    </div>
+    <div class="section">
+        <h3 id="REST-conventions">REST API conventions</h3>
+        <br>GET
+        /posts
+        Retrieve all the ressources (blog posts)
+        200 OK / 404 NOT FOUND
+        <br>GET
+        /posts/{id}
+        Retrieves a single resource (blog post) by id
+        200 OK / 404 NOT FOUND
+        <br>POST
+        /posts
+        Create a new ressource (blog post)
+        201 CREATED / 400 BAD REQUEST
+        <br>PUT
+        /posts/{id}
+        Update a ressource by id
+        204 NO CONTENT / 404 NOT FOUND
+        <br>PATCH
+        /posts/{id}
+        Partially updates a ressource id
+        204 NO CONTENT / 404 NOT FOUND
+        <br>DELETE
+        /posts/{id}
+        Deletes an existing ressource by id
+        204 NO CONTENT / 404 NOT FOUND
+    </div>
+</div>

@@ -1,0 +1,36 @@
+<div class="content">
+    <h1>Server Side Routing</h1>
+    <div class="section">
+        <h3 id="static-assets">Serving Static Assets in Express</h3>
+        <p>
+            <i>To serve static files such as images, CSS files, and JavaScript files, use the express.static
+                built-in middleware function in Express. The function signature is: express.static(root, [options]).
+                <br>
+                The root argument specifies the root directory from which to serve static assets. In node by convention,
+                static files
+                are served in the public folder.<br>Source: <a
+                    href="https://expressjs.com/en/starter/static-files.html">expressjs.com</a>
+            </i>
+        </p>
+        <img src="../static-files.png">
+    </div>
+    <div class="section">
+        <h3 id="REST-API-II">CRUDable REST API - Part II</h3>
+        <img src="../CRUDpartII.png">
+    </div>
+    <div class="section">
+        <h3 id="SSR">Server Side Routing in Express</h3>
+        <p>
+            In opposition to a client-side or single page application, server side rendering sends the fully
+            rendered page to the client. So SSR loads whole new pages from the server, which can result in performance
+            issues and a less dynamic experience but on the other hand, it can also be helpful in situations when then
+            rendering of the whole page on client-side takes too much time. Another significant tradeoff advantage
+            is that it doesn't affect SEO negatively like CSR does. They are usually easier to maintain and implement
+            the navigation.
+        </p>
+        <p>
+            In express we implemented SSR by rendering a template conformed by different html components before
+            sending it to the client as a response.
+        </p>
+        <img src="../SSR.png">
+    </div>

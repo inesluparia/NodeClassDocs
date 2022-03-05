@@ -1,0 +1,59 @@
+<div class="content">
+    <h1>Npm, Express & More JS</h1>
+    <div class="section">
+        <h3 id="callback-functions">Callback Functions</h3>
+        <p>A callback is a function passed into another function as an argument for later execution.</p>
+        <img src="../callback.png">
+    </div>
+    <div class="section">
+        <h3 id="code-conventions">Code Conventions</h3>
+        <p>Clean code and following code conventions is a key to readability. The key is to be consistent throughout the
+            project.
+            Sources for code conventions and popular guidelines:
+            <br><br>
+            <a href="https://developer.mozilla.org/en-US/docs/MDN/Guidelines/Code_guidelines/JavaScript">MDN JavaScrip
+                General Guidelines</a>
+            <br><br>
+            <a href="https://github.com/airbnb/javascript">AirBnB JavaScript Style Guide</a>
+        </p>
+    </div>
+    <div class="section">
+        <h3 id="npm-package.json">Npm and package.json</h3>
+        <p>The package.json file fullfills three responsibilities. It has the functional attributes of a project that
+            npm uses to
+            install dependencies, run scripts, and identify the entry point to our package. It also records metadata
+            about a project which is required before publishing to NPM.
+        </p>
+        <p>
+            To import code defined in another file also called modules it needs to be imported with the keyword
+            <b>'require'</b>
+            The result of require is then stored in a variable which is used to invoke the functions using the dot
+            notation.
+        </p>
+        <img src="../import.png">
+    </div>
+    <div class="section">
+        <h3 id="body-parsing">Body parsing</h3>
+        <p>To handle HTTP POST requests in Express.js you used to need to install the module called body-parser.
+            Which extracts the entire body portion of an incoming request stream and exposes it on req.body.
+            This body-parser module parses the JSON data submitted using HTTP POST request.
+            After Express 4.16, to parse JSON bodies we can just use:
+        </p>
+        <img src="../bodyparser.png">
+    </div>
+    <div class="section">
+        <h3 id="hoisting">Advanced functions and hoisting</h3>
+        <p>
+            <i>
+                JavaScript Hoisting refers to the process whereby the interpreter appears to move the declaration of
+                functions,
+                variables or classes to the top of their scope, prior to execution of the code. Hoisting allows
+                functions to be
+                safely used in code before they are declared.
+                <br>
+                Source: <a
+                    href="https://www.google.com/search?q=hoisting+javascript&oq=hoisting+&aqs=chrome.2.69i57j0i67l2j0i512l4j69i60.4704j0j7&sourceid=chrome&ie=UTF-8">MDN
+                    Web Docs</a>
+            </i>
+        </p>
+    </div>
