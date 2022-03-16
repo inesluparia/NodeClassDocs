@@ -1,5 +1,5 @@
 const router = require("express").Router()
-const templates = require("../public/templates/templates.js")
+const templates = require("../templates/templates.js")
 
 //routes
 router.get('/', (req, res) => {res.send(templates.home) })
